@@ -490,6 +490,30 @@
       background: #0c1320;
     }
 
+    .certificate-action {
+      display: flex;
+      padding: 12px;
+    }
+
+    .certificate-action .button-secondary {
+      width: 100%;
+    }
+
+    .mock-interview-player {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #000000;
+    }
+
+    .mock-interview-player video {
+      display: block;
+      width: 100%;
+      max-height: min(72vh, 720px);
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
     .project-meta {
       display: flex;
       justify-content: space-between;
@@ -921,6 +945,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certificates">Certificates</a></li>
           <li><a href="#cases">Cases</a></li>
+          <li><a href="#mock-interview">Mock Interview</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -1119,18 +1144,43 @@
         <div class="certificate-grid">
           <div class="certificate-card">
             <img src="assets/bero%20cert/467ba97d-12fc-4147-ba7f-6e2259c6ba2d.jpg" alt="Certificate 1">
+            <div class="certificate-action">
+              <a class="button-secondary" href="assets/bero%20cert/467ba97d-12fc-4147-ba7f-6e2259c6ba2d.jpg" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> View full size
+              </a>
+            </div>
           </div>
           <div class="certificate-card">
             <img src="assets/bero%20cert/85c5e575-04fa-4767-9590-bcfdbe7bb55d.jpg" alt="Certificate 2">
+            <div class="certificate-action">
+              <a class="button-secondary" href="assets/bero%20cert/85c5e575-04fa-4767-9590-bcfdbe7bb55d.jpg" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> View full size
+              </a>
+            </div>
           </div>
           <div class="certificate-card">
             <img src="assets/bero%20cert/876a5346-0163-4fb9-98c4-7cc8618b7e89.jpg" alt="Certificate 3">
+            <div class="certificate-action">
+              <a class="button-secondary" href="assets/bero%20cert/876a5346-0163-4fb9-98c4-7cc8618b7e89.jpg" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> View full size
+              </a>
+            </div>
           </div>
           <div class="certificate-card">
             <img src="assets/bero%20cert/a531843e-d926-41c0-be97-8aeea2670228.jpg" alt="Certificate 4">
+            <div class="certificate-action">
+              <a class="button-secondary" href="assets/bero%20cert/a531843e-d926-41c0-be97-8aeea2670228.jpg" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> View full size
+              </a>
+            </div>
           </div>
           <div class="certificate-card">
             <img src="assets/bero%20cert/b881725a-d244-44e0-9cc5-028c2f0db496.jpg" alt="Certificate 5">
+            <div class="certificate-action">
+              <a class="button-secondary" href="assets/bero%20cert/b881725a-d244-44e0-9cc5-028c2f0db496.jpg" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> View full size
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1342,10 +1392,27 @@ db.execute(query, [email, passwordHash]);</code></pre>
       </div>
     </section>
 
-    <section class="section" id="reflection">
+    <section class="section" id="mock-interview">
       <div class="container">
         <div class="section-head">
           <span class="section-index">08 / 10</span>
+          <h2 class="section-title">Mock Interview.</h2>
+          <p class="section-intro">Watch my mock interview and hear how I present my experience, projects, and approach to problem-solving.</p>
+        </div>
+
+        <div class="mock-interview-player">
+          <video controls playsinline preload="metadata" aria-label="Mock interview video">
+            <source src="assets/video/eba40ec4-2179-4f35-bc1d-ee44070f78ad.mp4" type="video/mp4">
+            Your browser does not support HTML video. <a href="assets/video/eba40ec4-2179-4f35-bc1d-ee44070f78ad.mp4">Open the mock interview video</a>.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reflection">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index">09 / 10</span>
           <h2 class="section-title">A note to future me.</h2>
           <p class="section-intro">The work behind the qualification, and the work still ahead.</p>
         </div>
@@ -1363,7 +1430,7 @@ db.execute(query, [email, passwordHash]);</code></pre>
     <section class="section" id="contact">
       <div class="container">
         <div class="section-head">
-          <span class="section-index">09 / 10</span>
+          <span class="section-index">10 / 10</span>
           <h2 class="section-title">Let’s talk.</h2>
           <p class="section-intro">If you are looking for someone dependable, curious, and ready to learn, I’d love to connect.</p>
         </div>
